@@ -1,0 +1,34 @@
+import java.util.ArrayList;
+//retainAll() will return the common value present in two arraylist in current object.
+public class Main { 
+  public static void main(String[] args) { 
+    ArrayList<String> cars = new ArrayList<String>();
+    cars.add("Volvo");
+    //cars.add("BMW");
+    cars.add("Ford");
+    cars.add("Mazda");
+    for (String i : cars) {
+      System.out.println(i);
+      }
+      ArrayList<String> car = new ArrayList<String>();
+    car.add("Volvo");
+    car.add("BMW");
+    car.add("Ford");
+   // car.add("Mazda");
+    for (String i : cars) {
+      System.out.println(i);
+    }
+    car.equals(cars);
+    System.out.println(car.equals(cars));
+    
+  } 
+}
+
+/*
+Volvo
+Ford
+Mazda
+Volvo
+Ford
+Mazda
+false*/
