@@ -1,0 +1,31 @@
+import java.util.ArrayList;
+
+public class Main { 
+  public static void main(String[] args) { 
+    ArrayList<String> cars = new ArrayList<String>();
+    cars.add("Volvo");
+    cars.add("BMW");
+    cars.add("Ford");
+    cars.add("Mazda");
+    //get the value at index 0
+    System.out.println(cars.get(0));
+    //remove the value at a given index
+    System.out.println(cars.remove(1));
+    //set the value at given index
+    System.out.println(cars.set(0,"lambergini"));
+    System.out.println(cars);
+    //size is used to know size of arraylist
+    System.out.println(cars.size());
+    //clear () will clear all the elements of Arraylist
+    cars.clear();
+    System.out.println(cars);
+  } 
+}
+/*
+Volvo
+BMW
+Volvo
+[lambergini, Ford, Mazda]
+3
+[]
+*/
